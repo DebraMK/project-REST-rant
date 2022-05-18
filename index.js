@@ -1,12 +1,15 @@
 require(`dotenv`).config()
 const express = require(`express`)
+const placesRoutes = require(`./controllers/places`)
 const app = express()
 
 app.set(`view engine`, `jsx`)
 app.engine(`jsx`, require(`express-react-views`).createEngine())
 
+app.use(express.static('public'))
+
 // Route to places
-app.use(`/places`, require(`./controllers/places`))
+app.use(`/places`, placesRoutes)
 
 // Route to home page
 app.get(`/`, (req, res) => {
