@@ -1,6 +1,7 @@
 const React = require('react')
 const Def = require('../default')
 
+// Add new place
 function new_form (){
     return (
         <Def>
