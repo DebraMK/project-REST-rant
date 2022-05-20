@@ -2,7 +2,7 @@ module.exports = [{
     name: `Rizzo's Rave`,
         city: `Merrimac`,
         state: `WI`,
-        cuisine: `American, Persian`,
+        cuisine: `Sushi, Persian`,
         pic: `/images/catfood.jpg`
     }, {
         name: `Bayla's Bistro`,

@@ -4,7 +4,7 @@ h1 {
 }
 
 nav {
-    background-color: cornflowerblue;
+    background-color: rgb(19, 93, 230);
     padding: 10px;
 }
 
@@ -29,7 +29,7 @@ nav a:hover {
 }
 
 body {
-    background-color: lightblue;
+    background-color: rgb(151, 159, 161);
     text-align: center;
 }
 
