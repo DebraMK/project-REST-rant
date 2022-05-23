@@ -9,8 +9,8 @@ nav {
 }
 
 nav ul {
-    display: inline;
-    margin-right: 25px;
+    list-style-type: none;
+    margin: 0;
 }
 
 nav li {
