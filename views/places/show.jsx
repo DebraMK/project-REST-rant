@@ -5,7 +5,7 @@ function show (data) {
     return (
         <Def>
           <main>
-            <h1>{ data.place.name}</h1>
+            <h1>{ data.place.name }</h1>
                 <h2>Rating</h2>
                     <h5>Not rated.</h5>
                 <h2>Description</h2>

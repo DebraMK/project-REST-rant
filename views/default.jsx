@@ -24,6 +24,7 @@ function Def (html) {
                     </ul>
                 </nav>
                 {html.children}
+                <footer>Go to my page.</footer>
             </body>
         </html>
     )

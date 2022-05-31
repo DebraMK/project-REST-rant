@@ -24,12 +24,12 @@ nav a {
 }
 
 nav a:hover {
-    color: pink;
+    color: orangered;
     text-decoration: none;
 }
 
 body {
-    background-color: rgb(151, 159, 161);
+    background-color: orange(151, 159, 161);
     text-align: center;
 }
 
