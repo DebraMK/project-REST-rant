@@ -4,6 +4,7 @@ const express = require(`express`)
 const methodOverride = require(`method-override`)
 const placesRoutes = require(`./controllers/places`)
 const app = express()
+const PORT = process.env.PORT
 const mongoose = require('mongoose')
 
 // middleware

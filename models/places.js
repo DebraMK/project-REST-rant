@@ -24,4 +24,4 @@ const placeSchema = new mongoose.Schema({
     founded: Number
 })
 
-module.exports = mongoose.model('Place', placeSchema)
+module.exports = mongoose.model('Places', placeSchema)
