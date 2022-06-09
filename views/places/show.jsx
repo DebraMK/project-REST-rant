@@ -42,12 +42,35 @@ function show (data) {
                     </h4>
                     <h2>Rating</h2>
                     <h5>Not rated.</h5>
+                    
                     <h2>Comments</h2>
-                    {comments}
-                <a href={`/places/${data.id}/edit`} className='btn btn-warning'>
+                    { comments }
+                    <br />
+                    <form method="POST" action={`/places/${data.place._id}/comment`}>
+                    <div className='form-group'>
+                        <label htmlFor="author">Your Name</label>
+                        <input className='form-control' id="author" name="author" type="text"/>
+                    </div>
+                    <div className='form-group'>
+                        <label htmlFor="content">Comments</label>
+                        <input className='form-control' id="content" name="content" type="textarea"/>
+                    </div>
+                    <div className='form-group'>
+                        <label htmlFor="rating">Stars</label>
+                        <input className='form-control' id="rating" name="rating" type="number"/>
+                    </div>
+                    <div className='form-group'>
+                        <label htmlFor="rant">Rant</label>
+                        <input className="form-control" id="rant" name="rant" type="checkbox"/>
+                    </div>
+                    <input className='btn btn-primary' type="submit" value="Add Comment"/>
+                </form>
+                <br />
+                <a href={`/places/${data.place._id}/edit`} className='btn btn-warning'>
                 Edit
                 </a>
-                <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
+                <br />
+                <form method="POST" action={`/places/${data.place._id}?_method=DELETE`}>
                 <button type="submit" className='btn btn-danger'>
                     Delete
                 </button>
